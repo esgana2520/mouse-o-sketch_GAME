@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse-o-sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>mouse-o-sketch</h1>
+    <div class="buttons">
+    <button onclick="changeColor('black')" type="button">black</button>
+    <button onclick="changeColor('rainbow')" type="button" class="gradient">rainbow</button>
+    <button onclick="changeColor('gray')" type="button">Gray Scale</button>
+    <button onclick="changeColor('white')" type="button">eraser</button>
+    <button onclick="changeColor('pick')" type="button">pick up: <input type="color" value="#ff0000" id="input-color" ></button>
+    </div>
+
+
+    <div class="board"></div>
+
+    <div class="grid-options">
+        <button class="clear" type="button" >clear</button>
+        <div class="rangeDiv">
+            <p>pixel size</p>
+            <input type="range" min="4" max="100" value="15" id="sizeRange" class="slider" onchange="changeSize(this.value)">
+            <p>Smallest to Largest</p>
+        </div>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>

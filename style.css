@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(3218228536.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Handjet', cursive;
+}
+h1{
+   
+    color: white;
+    margin: 20px;
+}
+.buttons{
+    width: 600px;
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+   justify-content: space-evenly;
+   
+   
+}
+button{
+    padding: 8px;
+    font-size: 30px;
+    cursor: pointer;
+    color: orange;
+    background-color: white;
+    border-radius: 10%;
+    font-weight: 400;
+   border-color: white;
+   border-width: 2px;
+   line-height: 27px;
+   background-color: black;
+   font-family: 'Handjet', cursive;
+}
+.gradient{
+    background: linear-gradient(90deg, red, yellow, white, blue) ;
+    color: black;
+}
+    
+.board{
+    width: 600px;
+    height: 600px;
+    
+    margin: 20px;
+    display: grid;
+    box-shadow:1px 1px 5px 5px black
+}
+
+.grid-options{
+    width: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    
+}
+.rangeDiv{
+    font-size: 30px;
+    margin-left: 70px;
+    
+}
+.slider{
+    width: 400px;
+    cursor: pointer;
+    background-color: brown;
+   
+}
